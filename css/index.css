@@ -1,0 +1,121 @@
+body,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+dl,
+dd {
+  margin: 0;
+}
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+img {
+  vertical-align: middle;
+}
+button {
+  border: none;
+  background: none;
+  padding: 0;
+  outline: none;
+  cursor: pointer;
+}
+body {
+  background: #f4f4f4;
+}
+#top {
+  height: 40px;
+  background: #fff;
+  border-bottom: 1px solid #f5f5f5;
+}
+#top .container {
+  margin: 0 auto;
+  width: 980px;
+  display: flex;
+  justify-content: space-between;
+}
+#top .container .left {
+  position: relative;
+}
+#top .container .left .logo {
+  margin: 0 20px;
+  position: relative;
+  z-index: 4;
+}
+#top .container .left span a {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 3;
+  padding: 0 3px 3px;
+  border-bottom: 1px solid #eee;
+  background: #fff;
+  display: none;
+}
+#top .container .left span:hover a {
+  display: block;
+}
+#top .container .right {
+  position: relative;
+  display: flex;
+}
+#top .container .right h3 {
+  position: relative;
+  font-size: 14px;
+  color: #666;
+  font-weight: normal;
+  line-height: 40px;
+}
+#top .container .right h3 a {
+  color: #464646;
+}
+#top .container .right h3 a:hover {
+  color: #ff4e00;
+}
+#top .container .right h3.text1 {
+  margin-right: 20px;
+  padding-left: 30px;
+}
+#top .container .right h3.text1:before {
+  content: "";
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  left: 0;
+  top: 5px;
+  background: url(../images/ico_01.png) no-repeat -30px 0;
+}
+#top .container .right h3.text2 {
+  padding-right: 30px;
+}
+#top .container .right h3.text2:before {
+  content: "";
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  right: 3px;
+  top: 5px;
+  background: url(../images/ico_01.png) no-repeat;
+  opacity: 0.1;
+  transform: rotate(90deg);
+}
+#top .container .right h3.text2 iframe {
+  display: none;
+  width: 708px;
+  height: 582px;
+  position: absolute;
+  right: 0;
+  top: 40px;
+}
+#top .container .right h3.text2:hover iframe {
+  display: block;
+}
