@@ -115,7 +115,209 @@ body {
   position: absolute;
   right: 0;
   top: 40px;
+  z-index: 4;
 }
 #top .container .right h3.text2:hover iframe {
   display: block;
+}
+#nav {
+  position: relative;
+  /*nav2是绝对定位*/
+  height: 134px;
+  background: url(../images/nav_bg.png) center no-repeat;
+}
+#nav .nav1 {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  width: 1200px;
+  margin: 0 auto;
+}
+#nav .nav1 .title {
+  display: flex;
+  margin-right: 40px;
+}
+#nav .nav1 .title a {
+  margin: 6px 20px 0 0;
+}
+#nav .nav1 .title h1 {
+  position: relative;
+  font-size: 24px;
+  color: #ffb400;
+  margin-top: 28px;
+}
+#nav .nav1 .title h1 span {
+  display: block;
+  font-size: 14px;
+  color: #fff;
+  font-weight: normal;
+  margin-top: 2px;
+}
+#nav .nav1 .title h1::after {
+  position: absolute;
+  top: 8px;
+  right: -16px;
+  content: "";
+  width: 69px;
+  height: 19px;
+  background: url(../images/new_version.png);
+}
+#nav .nav1 ul {
+  display: flex;
+}
+#nav .nav1 ul li a {
+  display: block;
+  width: 102px;
+  height: 102px;
+  line-height: 102px;
+  font-size: 16px;
+  color: #fff;
+  text-align: center;
+}
+#nav .nav1 ul li a:hover {
+  color: #ffb400;
+}
+#nav .nav1 ul li:last-child a {
+  text-decoration: underline;
+  color: #ffb400;
+}
+#nav .nav1 .login {
+  position: absolute;
+  right: -120px;
+  top: 0;
+  width: 126px;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#nav .nav1 .login > span {
+  width: 46px;
+  height: 45px;
+  background: url(../images/dia-login-head.png);
+  cursor: pointer;
+}
+#nav .nav1 .login p {
+  color: #fff;
+}
+#nav .nav1 .login p span {
+  color: #ffb400;
+  cursor: pointer;
+}
+#nav .nav2 {
+  width: 100%;
+  height: 400px;
+  background: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  height: 0;
+  overflow: hidden;
+  transition: height 0.3s ease;
+}
+#nav .nav2 > ul {
+  width: 1100px;
+  margin: 115px auto 0;
+  position: relative;
+  left: 389px;
+  display: flex;
+}
+#nav .nav2 > ul li li {
+  position: relative;
+  width: 106px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  font-size: 14px;
+}
+#nav .nav2 a {
+  color: #fff;
+}
+#nav .nav2 a:hover {
+  color: #ffb400;
+}
+#nav .nav2 .new::before,
+#nav .nav2 .hot::before {
+  content: "N";
+  width: 18px;
+  height: 18px;
+  line-height: 18px;
+  text-align: center;
+  font-size: 12px;
+  color: #fff;
+  background: #f31419;
+  border-radius: 50%;
+  position: absolute;
+  left: 3px;
+  top: 12px;
+}
+#nav .nav2 .hot::before {
+  content: "H";
+  left: 10px;
+  top: 11px;
+}
+#nav .nav2 ul > li:nth-child(2) li:last-child::before {
+  /* 第2列最后一个li*/
+  left: -3px;
+}
+#nav .nav2 ul > li:nth-child(4) li:first-child::before {
+  /* 第4列第一个li*/
+  left: -12px;
+}
+#nav .nav2 ul > li:nth-child(5) li:nth-child(3)::before {
+  /* 第4列第一个li*/
+  left: 3px;
+}
+#nav .nav2 .contact span {
+  width: 132px;
+  padding: 6px;
+  background: #fff;
+  position: absolute;
+  left: -158px;
+  display: none;
+}
+#nav .nav2 .contact span img {
+  width: 100%;
+}
+#nav .nav2 .contact span::after {
+  content: "";
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left: 20px solid #fff;
+  position: absolute;
+  right: -19px;
+}
+#nav .nav2 .contact li:hover span {
+  display: block;
+}
+#nav .nav2 .contact li:nth-child(1) span {
+  top: -15px;
+}
+#nav .nav2 .contact li:nth-child(1) span:after {
+  top: 26px;
+}
+#nav .nav2 .contact li:nth-child(2) span {
+  top: -40px;
+}
+#nav .nav2 .contact li:nth-child(2) span:after {
+  top: 50px;
+}
+#nav .nav2 .contact li:nth-child(3) span {
+  top: -48px;
+}
+#nav .nav2 .contact li:nth-child(3) span:after {
+  top: 58px;
+}
+#nav .nav2 .contact li:nth-child(4) span {
+  top: -45px;
+}
+#nav .nav2 .contact li:nth-child(4) span:after {
+  top: 55px;
+}
+#nav:hover .nav2 {
+  height: 400px;
 }
