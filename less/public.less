@@ -1,60 +1,92 @@
-body,p,h1,h2,h3,h4,h5,h6,dl,dd{
+body,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+dl,
+dd {
   margin: 0;
 }
-ul,ol{
+ul,
+ol {
   margin: 0;
   padding: 0;
   list-style: none;
 }
-a{
+a {
   text-decoration: none;
 }
-img{
+img {
   vertical-align: middle;
 }
-button{
+button {
   border: none;
   background: none;
   padding: 0;
   outline: none;
   cursor: pointer;
 }
-body{
+body {
   background: #f4f4f4;
 }
 
 /* 登录弹窗 */
-.dialog{
-	width: 100vw;
-	height: 100vh;
-	background: rgba(0, 0, 0, .7);
+.dialog {
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.7);
 
-	position: fixed;
-	left: 0;
-	top: 0;
-	z-index: 10;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 10;
 
-	display: none;
-  &.show{
+  display: none;
+  &.show {
     display: flex;
     justify-content: center;
     align-items: center;
   }
-  .wrap{
+  .wrap {
     position: relative;
-    h3{
+    h3 {
       font-size: 24px;
       line-height: 42px;
       text-align: center;
       color: #fffefe;
     }
   }
-  .close{
+  .close {
     width: 25px;
     height: 25px;
     position: absolute;
     top: 6px;
     right: 6px;
     background: url(../images/dia-login-close.png) no-repeat center;
+  }
+}
+
+/*轮播图公用样式*/
+.carousel {
+  position: relative;
+  overflow: hidden;
+  .carouselInner {
+    display: flex;
+    position: absolute;
+    left: 0;
+  }
+  .carouselIndicators{
+    position: absolute;
+    display: flex;
+    span{
+      cursor: pointer;
+      background: #fff;
+      &:hover,&.active{
+        background: #feb012;
+      }
+    }
   }
 }

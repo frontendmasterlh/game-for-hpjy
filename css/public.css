@@ -65,3 +65,25 @@ body {
   right: 6px;
   background: url(../images/dia-login-close.png) no-repeat center;
 }
+/*轮播图公用样式*/
+.carousel {
+  position: relative;
+  overflow: hidden;
+}
+.carousel .carouselInner {
+  display: flex;
+  position: absolute;
+  left: 0;
+}
+.carousel .carouselIndicators {
+  position: absolute;
+  display: flex;
+}
+.carousel .carouselIndicators span {
+  cursor: pointer;
+  background: #fff;
+}
+.carousel .carouselIndicators span:hover,
+.carousel .carouselIndicators span.active {
+  background: #feb012;
+}

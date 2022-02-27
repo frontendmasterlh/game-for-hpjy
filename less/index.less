@@ -328,3 +328,76 @@
     }
   }
 }
+
+/* bg1 */
+#bg1 {
+  height: 650px;
+  background: #fff url(../images/bg_01.jpg);
+  margin-top: -134px;
+}
+
+/* banner */
+#banner {
+  height: 562px;
+  padding-top: 20px;
+  background: #fff url(../images/bg_02.jpg);
+  .container {
+    width: 1200px;
+    position: relative;
+    margin: 0 auto;
+    .tip {
+      width: 119px;
+      height: 154px;
+      background: url(../images/year-btn.png) no-repeat;
+
+      text-indent: -9999px;
+      overflow: hidden;
+      position: absolute;
+      left: -135px;
+      top: 0;
+    }
+    .top {
+      display: flex;
+      height: 320px;
+      .down {
+        width: 180px;
+        background: url(../images/down_bg.png) no-repeat center;
+        text-align: center;
+        h3 {
+          font-size: 18px;
+          line-height: 36px;
+          color: #ffb007;
+          font-weight: normal;
+        }
+        a {
+          display: block;
+          height: 54px;
+          margin-bottom: 5px;
+          text-indent: -9999px;
+          overflow: hidden;
+        }
+        img {
+          width: 160px;
+        }
+      }
+      .carousel {
+        width: 590px;
+        .carouselInner {
+          width: 200%;
+        }
+        .carouselIndicators {
+          right: 17px;
+          bottom: 15px;
+          span {
+            width: 20px;
+            height: 8px;
+            margin-right: 7px;
+            &.active {
+              width: 44px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -41,6 +41,7 @@ body {
   left: 0;
   top: 0;
   z-index: 10;
+  display: none;
 }
 .dialog.show {
   display: flex;
@@ -63,6 +64,28 @@ body {
   top: 6px;
   right: 6px;
   background: url(../images/dia-login-close.png) no-repeat center;
+}
+/*轮播图公用样式*/
+.carousel {
+  position: relative;
+  overflow: hidden;
+}
+.carousel .carouselInner {
+  display: flex;
+  position: absolute;
+  left: 0;
+}
+.carousel .carouselIndicators {
+  position: absolute;
+  display: flex;
+}
+.carousel .carouselIndicators span {
+  cursor: pointer;
+  background: #fff;
+}
+.carousel .carouselIndicators span:hover,
+.carousel .carouselIndicators span.active {
+  background: #feb012;
 }
 #top {
   height: 40px;
@@ -375,4 +398,74 @@ body {
 }
 #loginBox .btn a:nth-child(2) {
   background: url(../images/dia-login-wx.png) no-repeat center;
+}
+/* bg1 */
+#bg1 {
+  height: 650px;
+  background: #fff url(../images/bg_01.jpg);
+  margin-top: -134px;
+}
+/* banner */
+#banner {
+  height: 562px;
+  padding-top: 20px;
+  background: #fff url(../images/bg_02.jpg);
+}
+#banner .container {
+  width: 1200px;
+  position: relative;
+  margin: 0 auto;
+}
+#banner .container .tip {
+  width: 119px;
+  height: 154px;
+  background: url(../images/year-btn.png) no-repeat;
+  text-indent: -9999px;
+  overflow: hidden;
+  position: absolute;
+  left: -135px;
+  top: 0;
+}
+#banner .container .top {
+  display: flex;
+  height: 320px;
+}
+#banner .container .top .down {
+  width: 180px;
+  background: url(../images/down_bg.png) no-repeat center;
+  text-align: center;
+}
+#banner .container .top .down h3 {
+  font-size: 18px;
+  line-height: 36px;
+  color: #ffb007;
+  font-weight: normal;
+}
+#banner .container .top .down a {
+  display: block;
+  height: 54px;
+  margin-bottom: 5px;
+  text-indent: -9999px;
+  overflow: hidden;
+}
+#banner .container .top .down img {
+  width: 160px;
+}
+#banner .container .top .carousel {
+  width: 590px;
+}
+#banner .container .top .carousel .carouselInner {
+  width: 200%;
+}
+#banner .container .top .carousel .carouselIndicators {
+  right: 17px;
+  bottom: 15px;
+}
+#banner .container .top .carousel .carouselIndicators span {
+  width: 20px;
+  height: 8px;
+  margin-right: 7px;
+}
+#banner .container .top .carousel .carouselIndicators span.active {
+  width: 44px;
 }
