@@ -22,3 +22,39 @@ button{
 body{
   background: #f4f4f4;
 }
+
+/* 登录弹窗 */
+.dialog{
+	width: 100vw;
+	height: 100vh;
+	background: rgba(0, 0, 0, .7);
+
+	position: fixed;
+	left: 0;
+	top: 0;
+	z-index: 10;
+
+	display: none;
+  &.show{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .wrap{
+    position: relative;
+    h3{
+      font-size: 24px;
+      line-height: 42px;
+      text-align: center;
+      color: #fffefe;
+    }
+  }
+  .close{
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    top: 6px;
+    right: 6px;
+    background: url(../images/dia-login-close.png) no-repeat center;
+  }
+}

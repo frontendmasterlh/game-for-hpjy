@@ -269,28 +269,28 @@
           right: -19px;
         }
       }
-      li:hover span{
+      li:hover span {
         display: block;
       }
-      li:nth-child(1) span{
+      li:nth-child(1) span {
         top: -15px;
         &:after {
           top: 26px;
         }
       }
-      li:nth-child(2) span{
+      li:nth-child(2) span {
         top: -40px;
         &:after {
           top: 50px;
         }
       }
-      li:nth-child(3) span{
+      li:nth-child(3) span {
         top: -48px;
         &:after {
           top: 58px;
         }
       }
-      li:nth-child(4) span{
+      li:nth-child(4) span {
         top: -45px;
         &:after {
           top: 55px;
@@ -298,7 +298,33 @@
       }
     }
   }
-  &:hover .nav2{
+  &:hover .nav2 {
     height: 400px;
+  }
+}
+
+/* 登录弹窗 */
+#loginBox {
+  .wrap {
+    width: 634px;
+    height: 327px;
+    background: url(../images/dia-login-bg.png) no-repeat center;
+  }
+  .btn {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    a {
+      width: 130px;
+      height: 164px;
+      font-size: 0;
+      margin: 0 40px;
+      &:nth-child(1) {
+        background: url(../images/dia-login-qq.png) no-repeat center;
+      }
+      &:nth-child(2) {
+        background: url(../images/dia-login-wx.png) no-repeat center;
+      }
+    }
   }
 }

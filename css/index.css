@@ -32,6 +32,38 @@ button {
 body {
   background: #f4f4f4;
 }
+/* 登录弹窗 */
+.dialog {
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.7);
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 10;
+}
+.dialog.show {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.dialog .wrap {
+  position: relative;
+}
+.dialog .wrap h3 {
+  font-size: 24px;
+  line-height: 42px;
+  text-align: center;
+  color: #fffefe;
+}
+.dialog .close {
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  top: 6px;
+  right: 6px;
+  background: url(../images/dia-login-close.png) no-repeat center;
+}
 #top {
   height: 40px;
   background: #fff;
@@ -320,4 +352,27 @@ body {
 }
 #nav:hover .nav2 {
   height: 400px;
+}
+/* 登录弹窗 */
+#loginBox .wrap {
+  width: 634px;
+  height: 327px;
+  background: url(../images/dia-login-bg.png) no-repeat center;
+}
+#loginBox .btn {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+#loginBox .btn a {
+  width: 130px;
+  height: 164px;
+  font-size: 0;
+  margin: 0 40px;
+}
+#loginBox .btn a:nth-child(1) {
+  background: url(../images/dia-login-qq.png) no-repeat center;
+}
+#loginBox .btn a:nth-child(2) {
+  background: url(../images/dia-login-wx.png) no-repeat center;
 }
